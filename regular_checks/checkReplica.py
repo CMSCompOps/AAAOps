@@ -1,1 +1,0 @@
-/afs/cern.ch/user/j/jodiazcr/TransferTeam/commons/checkReplica.py
