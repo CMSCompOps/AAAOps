@@ -1,0 +1,14 @@
+bonner03.rice.edu
+cms25.physics.ucsb.edu
+cms-se.hep.uprm.edu
+cmsxrd.ts.infn.it
+ds-t3-01.cr.cnaf.infn.it
+hepxrd01.colorado.edu
+lyogrid06.in2p3.fr
+ntugrid4.phys.ntu.edu.tw
+osg-se.cac.cornell.edu
+osg-xrootd01.cac.cornell.edu
+storm.mib.infn.it
+t3se01.psi.ch
+xrootd0.hep.brown.edu
+xrootd1.hep.brown.edu
