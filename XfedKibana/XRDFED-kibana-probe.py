@@ -224,7 +224,7 @@ def test_redirector(servicename, redirector, file_below=None, file_above=None, e
                 serviceUpdate.appendChild(c)
                 need_xml_link=1
             else:
-                availinfo=availinfo+"<br />File below: OK"
+                availinfo=availinfo+"<br />File below: OK <br />"
             nValue = doc.createElement("numericvalue")
             nValue.setAttribute("name", "xrdcp_below_time")
             nValue.setAttribute("desc", "Time to copy a file below redirector")
@@ -247,7 +247,7 @@ def test_redirector(servicename, redirector, file_below=None, file_above=None, e
                 serviceUpdate.appendChild(c)
                 need_xml_link=1
             else:
-                availinfo=availinfo+"<br />File above: OK"
+                availinfo=availinfo+"<br />File above: OK <br />"
             nValue = doc.createElement("numericvalue")
             nValue.setAttribute("name", "xrdcp_above_time")
             nValue.setAttribute("desc", "Time to copy a file elsewhere in the federation")
@@ -259,7 +259,8 @@ def test_redirector(servicename, redirector, file_below=None, file_above=None, e
     # save functional test info to XML
     if need_xml_link:
         myhostname = socket.gethostname()
-        notes_text = notes_text + "Details for failed test: http://" + myhostname + "/sls/xrdfed/" + servicename + ".xml <br />\n"
+        notes_text = notes_text + "Details for failed test: http://" + myhostname + "/sls/xrdfed_kibana/" + servicename + ".xml <br />\n" + "Details for recently failed test : http://vocms037.cern.ch/sls/xrdfed_kibana/err/ <br />\n" 
+	availinfo = availinfo + "<br />" + notes_text 
     availabilityF = doc.createElement("status")
     availabilityF.appendChild(doc.createTextNode(str(availability)))
     serviceUpdate.appendChild(availabilityF)

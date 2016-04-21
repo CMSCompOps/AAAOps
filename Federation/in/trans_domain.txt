@@ -1,0 +1,12 @@
+brown.edu
+colorado.edu
+cornell.edu
+ds-t3-01.cr.cnaf.infn.it
+edu.tw
+lyogrid06.in2p3.fr
+mib.infn.it
+psi.ch
+rice.edu
+ts.infn.it
+ucsb.edu
+uprm.edu
