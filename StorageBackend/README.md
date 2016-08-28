@@ -1,3 +1,3 @@
-Usage of Storage backend :
-	- python checkVersion.py    # Gives all sites 
-	- python checkVersion.py | grep DPM   # Gives only DPM sites
+# Usage of Storage Backend 
+  *python checkVersion.py    		# Gives all sites 
+  *python checkVersion.py | grep DPM   	# Gives only DPM sites
