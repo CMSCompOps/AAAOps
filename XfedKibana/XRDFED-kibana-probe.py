@@ -368,6 +368,10 @@ def main():
                          'file_above': FILEABOVE,
                          'extra_notes':CMSLINK},
 	
+	"XRDFED_CMS-EU-IPv6":{ 'redirector':'xrootd-cms-redir-01.cr.cnaf.infn.it:1094',
+                         	'file_below': FILEBELOW,
+                         	'file_above': FILEABOVE,
+                         	'extra_notes':CMSLINK},	
 	"XRDFED_CMS-TRANSIT":{'redirector':'cms-xrd-transit.cern.ch:1094',
                          'file_below': FILEBELOW,
                          'file_above': FILEABOVE,
