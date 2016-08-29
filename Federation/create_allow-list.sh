@@ -9,7 +9,7 @@ declare -a redirectors=("xrdcmsglobal01.cern.ch:1094" "xrdcmsglobal02.cern.ch:10
 for j in "${redirectors[@]}";do
 	if [ "$j" == "xrdcmsglobal01.cern.ch:1094" ] || [ "$j" == "xrdcmsglobal02.cern.ch:1094" ]; then
 		#query european reginal redirectors
-		xrdmapc --list all "$j" | grep -E 'xrootd.ba.infn.it|xrootd-redic.pi.infn.it|llrxrd-redir.in2p3.fr:1094' | awk '{print $3}' > $BASE/tmp_euRED_$j	
+		xrdmapc --list all "$j" | grep -E 'xrootd.ba.infn.it|xrootd-redic.pi.infn.it|llrxrd-redir.in2p3.fr:1094' | awk '{print $3}' | cut -d ':' -f1 > $BASE/tmp_euRED_$j	
 		xrdmapc --list all "$j" | grep -E 'cmsxrootd1.fnal.gov|xrootd.unl.edu' | awk '{print $3}' | cut -d ':' -f1 > $BASE/tmp_usRED_$j
 		for i in $(cat $BASE/tmp_euRED_$j);do
 			xrdmapc --list all $i:1094 > $BASE/tmp_$i	
@@ -41,8 +41,14 @@ diff $FEDINFO/in/prod_xrdcmsglobal01.cern.ch\:1094.txt $FEDINFO/in/prod_xrdcmsgl
 stat=$(echo $?)
 if [ $stat == 1 ]; then
 	cat $FEDINFO/in/prod_xrdcmsglobal01.cern.ch\:1094.txt $FEDINFO/in/prod_xrdcmsglobal02.cern.ch\:1094.txt | sort -u > $FEDINFO/in/prod.txt	
+	cat $FEDINFO/out/list_eu_xrdcmsglobal01.cern.ch\:1094.allow $FEDINFO/out/list_eu_xrdcmsglobal02.cern.ch\:1094.allow | sort -u > $FEDINFO/out/list_eu.allow
+	cat $FEDINFO/out/list_us_xrdcmsglobal01.cern.ch\:1094.allow $FEDINFO/out/list_us_xrdcmsglobal02.cern.ch\:1094.allow | sort -u > $FEDINFO/out/list_us.allow
+ 
 else
 	cp $FEDINFO/in/prod_xrdcmsglobal02.cern.ch\:1094.txt $FEDINFO/in/prod.txt
+	cp $FEDINFO/out/list_us_xrdcmsglobal01.cern.ch\:1094.allow $FEDINFO/out/list_us.allow
+	cp $FEDINFO/out/list_eu_xrdcmsglobal01.cern.ch\:1094.allow $FEDINFO/out/list_eu.allow
+	
 fi	
 
 
