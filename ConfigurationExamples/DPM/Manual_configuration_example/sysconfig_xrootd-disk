@@ -1,0 +1,17 @@
+XROOTD_USER=dpmmgr
+XROOTD_GROUP=dpmmgr
+XROOTD_DISK_OPTIONS="-l /var/log/xrootd/xrootd.log -c /etc/xrootd/xrootd-dpmdisk.cfg -k fifo -I v4"
+XROOTD_INSTANCES="disk"
+export DPM_HOST="<dpm_host>"
+export DPNS_HOST="<dpm_host>"
+if [ `uname -m` = 'x86_64' ]; then
+  XRDLIBDIR='lib64'
+else
+  XRDLIBDIR='lib'
+fi
+export XRDLIBDIR
+export XRD_MAXREDIRECTCOUNT=1
+export MALLOC_ARENA_MAX=4
+export DPM_CONRETRY=0
+export DPNS_CONRETRY=0
+DAEMON_COREFILE_LIMIT=unlimited

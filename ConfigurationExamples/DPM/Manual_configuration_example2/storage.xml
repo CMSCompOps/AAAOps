@@ -1,0 +1,6 @@
+<storage-mapping>
+   ....
+   <lfn-to-pfn protocol="direct" path-match="/+store/test/xrootd/<cms_site_name>/+store/(.*)" result="/dpm/<dpm_domain>/home/cms/store/$1"/>
+   <lfn-to-pfn protocol="direct" path-match="/+store/(.*)" result="/dpm/<dpm_domain>/home/cms/store/$1"/>
+   ...
+</storage-mapping>
