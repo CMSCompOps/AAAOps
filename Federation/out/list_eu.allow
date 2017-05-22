@@ -1,34 +1,60 @@
-cms.allow host *.ac.at
-cms.allow host *.ac.be
-cms.allow host *.ac.cn
-cms.allow host *.ac.kr
-cms.allow host *.ac.uk
-cms.allow host *.cea.fr
-cms.allow host *.cern.ch
-cms.allow host *.ciemat.es
-cms.allow host *.csc.fi
-cms.allow host *.cscs.ch
-cms.allow host *.desy.de
-cms.allow host *.edu.tr
-cms.allow host *.edu.tw
-cms.allow host *.gov.pl
-cms.allow host *.gridka.de
-cms.allow host *.ifca.es
-cms.allow host *.ihep.su
-cms.allow host *.in2p3.fr
-cms.allow host *.infn.it
-cms.allow host *.ingrid.pt
-cms.allow host *.itep.ru
-cms.allow host *.jinr.ru
-cms.allow host *.jinr-t1.ru
-cms.allow host *.kbfi.ee
-cms.allow host *.kfki.hu
-cms.allow host *.kharkov.ua
-cms.allow host *.msu.ru
-cms.allow host *.org.tw
-cms.allow host *.pic.es
-cms.allow host *.psi.ch
-cms.allow host *.res.in
-cms.allow host *.rwth-aachen.de
-cms.allow host *.troitsk.ru
-cms.allow host *.uoi.gr
+*.ba.infn.it
+*.bris.ac.uk
+*.brunel.ac.uk
+*.ccxrpli003.in2p3.fr
+*.cis.gov.pl
+*.cmsxrootd-1.gridka.de
+*.cmsxrootd-2.gridka.de
+*.cnaf.infn.it
+*.datagrid.cea.fr
+*.eoscms-srv-b2.cern.ch
+*.gaexroot01.ciemat.es
+*.grid143.kfki.hu
+*.hask.csc.fi
+*.ic.ac.uk
+*.icm.edu.pl
+*.ihep.ac.cn
+*.iihe.ac.be
+*.indiacms.res.in
+*.inr.troitsk.ru
+*.kipt.kharkov.ua
+*.knu.ac.kr
+*.lcg.cscs.ch
+*.lcgsexrd.jinr.ru
+*.llrpp01.in2p3.fr
+*.llrxrd-redir.in2p3.fr
+*.lnl.infn.it
+*.m45.ihep.su
+*.metu.edu.tr
+*.ncg.ingrid.pt
+*.nchc.org.tw
+*.nute.csc.fi
+*.oeaw.ac.at
+*.p05614910m96330.cern.ch
+*.physics.uoi.gr
+*.physik.rwth-aachen.de
+*.pi.infn.it
+*.polgrid4.in2p3.fr
+*.pool01.ifca.es
+*.pool02.ifca.es
+*.pool03.ifca.es
+*.pool04.ifca.es
+*.pool05.ifca.es
+*.pool06.ifca.es
+*.pool07.ifca.es
+*.pool08.ifca.es
+*.rl.ac.uk
+*.roma1.infn.it
+*.sbgse1.in2p3.fr
+*.se-xrd01.jinr-t1.ru
+*.t2-cms-xrootd01.desy.de
+*.t2-cms-xrootd02.desy.de
+*.ucl.ac.be
+*.xrdcmstzero1.cern.ch
+*.xrdcmstzero2.cern.ch
+*.xrdcmstzero3.cern.ch
+*.xrdcmstzero4.cern.ch
+*.xrootd01-cmst1.pic.es
+*.xrootd02-cmst1.pic.es
+    
+* redirect cms-xrd-transit.cern.ch+:1213
