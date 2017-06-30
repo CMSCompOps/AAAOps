@@ -1,0 +1,13 @@
+*.accre.vanderbilt.edu
+*.cmsaf.mit.edu
+*.fnal.gov
+*.hep.wisc.edu
+*.ihepa.ufl.edu
+*.rcac.purdue.edu
+*.rc.ufl.edu
+*.sprace.org.br
+*.ucsd.edu
+*.ultralight.org
+*.unl.edu
+    
+* redirect cms-xrd-transit.cern.ch+:1213
