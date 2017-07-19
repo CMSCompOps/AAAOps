@@ -1,34 +1,32 @@
-cms.allow host *.ac.at
-cms.allow host *.ac.be
-cms.allow host *.ac.cn
-cms.allow host *.ac.kr
-cms.allow host *.ac.uk
-cms.allow host *.cea.fr
-cms.allow host *.cern.ch
-cms.allow host *.ciemat.es
-cms.allow host *.csc.fi
-cms.allow host *.cscs.ch
-cms.allow host *.desy.de
-cms.allow host *.edu.tr
-cms.allow host *.edu.tw
-cms.allow host *.gov.pl
-cms.allow host *.gridka.de
-cms.allow host *.ifca.es
-cms.allow host *.ihep.su
-cms.allow host *.in2p3.fr
-cms.allow host *.infn.it
-cms.allow host *.ingrid.pt
-cms.allow host *.itep.ru
-cms.allow host *.jinr.ru
-cms.allow host *.jinr-t1.ru
-cms.allow host *.kbfi.ee
-cms.allow host *.kfki.hu
-cms.allow host *.kharkov.ua
-cms.allow host *.msu.ru
-cms.allow host *.org.tw
-cms.allow host *.pic.es
-cms.allow host *.psi.ch
-cms.allow host *.res.in
-cms.allow host *.rwth-aachen.de
-cms.allow host *.troitsk.ru
-cms.allow host *.uoi.gr
+*.ac.at
+*.ac.be
+*.ac.cn
+*.ac.kr
+*.ac.uk
+*.cea.fr
+*.cern.ch
+*.ciemat.es
+*.csc.fi
+*.cscs.ch
+*.desy.de
+*.edu.pl
+*.edu.tr
+*.gov.pl
+*.gridka.de
+*.ifca.es
+*.ihep.su
+*.in2p3.fr
+*.infn.it
+*.ingrid.pt
+*.jinr.ru
+*.jinr-t1.ru
+*.kfki.hu
+*.kharkov.ua
+*.org.tw
+*.pic.es
+*.res.in
+*.rwth-aachen.de
+*.troitsk.ru
+*.uoi.gr
+    
+* redirect cms-xrd-transit.cern.ch+:1213

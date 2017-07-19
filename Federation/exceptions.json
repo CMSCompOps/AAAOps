@@ -19,11 +19,11 @@
 		"VOname" : "T2_US_Nebraska"
 	},
 
-	"ds-05-01.cr.cnaf.infn.it" : {
+	"ds-t3-01.cr.cnaf.infn.it" : {
 		"VOname" : "T3_IT_Bologna"
 	},
 
-	"ds-05-02.cr.cnaf.infn.it" : {
+	"ds-t3-02.cr.cnaf.infn.it" : {
 		"VOname" : "T3_IT_Bologna"
 	},
 	
@@ -65,6 +65,27 @@
 	
 	"cmsxrd.ts.infn.it" : {
 		"VOname" : "T3_IT_Trieste"
+	},
+
+	"se11.accre.vanderbilt.edu" : {
+		"VOname" : "T2_US_Vanderbilt"
+	},
+	
+	"se9.accre.vanderbilt.edu" : {
+		"VOname" : "T2_US_Vanderbilt"
+	},
+	
+	"se1.accre.vanderbilt.edu" : {
+		"VOname" : "T2_US_Vanderbilt"
+	},
+
+	"se4.accre.vanderbilt.edu" : {
+		"VOname" : "T2_US_Vanderbilt"
+	},
+
+	"se8.accre.vanderbilt.edu" : {
+		"VOname" : "T2_US_Vanderbilt"
 	}
+
 
 }
